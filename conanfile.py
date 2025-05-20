@@ -3,8 +3,8 @@ from conan.tools.cmake import CMake, CMakeToolchain, CMakeDeps
 from conan.tools.files import copy, rmdir
 import os
 
-class CryptoGuardConan(ConanFile):
-    name = "books_db"
+class TemplateAppConan(ConanFile):
+    name = "template_app"
     version = "0.0.1"
     settings = "os", "compiler", "build_type", "arch"
     
@@ -14,6 +14,7 @@ class CryptoGuardConan(ConanFile):
         self.requires("benchmark/1.9.1")
         self.requires("abseil/20250127.0")
         self.requires("boost/1.87.0")
+        self.requires("gtest/1.13.0")
         # self.requires("openssl/3.4.1")
         # self.requires("sqlite3/3.49.1")
         pass
