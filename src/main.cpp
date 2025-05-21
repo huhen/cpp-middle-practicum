@@ -7,4 +7,6 @@ int main() {
 
     std::flat_set<int> fs;
     fs.emplace(1);
+
+    return 0;
 }
